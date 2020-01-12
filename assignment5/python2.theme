@@ -1,0 +1,10 @@
+class_declaration : 0;35
+self_keyword : 0;32
+function_definition : 0;35
+loop_for : 0;95
+loop_while : 0;95
+if_elif_else : 0;92
+comment : 0;96
+print : 0;34
+string : 0;92
+try_except : 0;33

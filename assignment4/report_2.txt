@@ -1,0 +1,4 @@
+Log timestamp: 1570312041.8503773 -- blur_with_pure_python() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 4.897319793701172
+Log timestamp: 1570312041.9007568 -- blur_with_numpy_vectorization() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 0.04889678955078125
+Log timestamp: 1570462191.429492 -- blur_with_pure_python() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 5.021612644195557
+Log timestamp: 1570462191.4548411 -- blur_with_numpy_vectorization() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 0.023916006088256836

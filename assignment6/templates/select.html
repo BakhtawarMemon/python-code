@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<form action="/plot" name='main_form' method="POST">
+    {% if error %}
+    <p><strong>Error:</strong> {{ error }}
+    {% endif %}
+    <h3>Select Parameters</h3>
+    <span>Please select two features from the dataset, and one classifier.</span>
+    <p>
+
+    <h4>The dataset Diabetes is selected!</h4>
+    <p>Select the first feature</p>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature1" value="glucose"> Glucose
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature1" value="pressure"> Pressure
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature1" value="pregnant"> Pregnant
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature1" value="triceps"> Triceps
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature1" value="insulin"> Insulin
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature1" value="mass"> Mass
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature1" value="pedigree"> Pedigree
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature1" value="age"> Age
+        </label>
+    </div>
+    <p>Select the second feature</p>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature2" value="glucose"> Glucose
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature2" value="pressure"> Pressure
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature2" value="pregnant"> Pregnant
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature2" value="triceps"> Triceps
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature2" value="insulin"> Insulin
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature2" value="mass"> Mass
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature2" value="pedigree"> Pedigree
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="feature2" value="age"> Age
+        </label>
+    </div>
+
+    <p>Select a classifier</p>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="classifier" value="LogisticRegression"> LogisticRegression
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="classifier" value="MLPClassifier"> MLPClassifier
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="classifier" value="KNeighborsClassifier"> KNeighborsClassifier
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="classifier" value="SVC"> SVC
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="classifier" value="GaussianProcessClassifier"> GaussianProcessClassifier
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="classifier" value="RBF"> RBF
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="classifier" value="DecisionTreeClassifier"> DecisionTreeClassifier
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="classifier" value="RandomForestClassifier"> RandomForestClassifier
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" autocomplete="off" name="classifier" value="AdaBoostClassifier"> AdaBoostClassifier
+        </label>
+    </div>
+
+    <p>
+
+    <div>
+        <input type="submit" id='submit_btn' class="btn btn-success" value="Visualize!">
+    </div>
+
+    </div>
+</form>
+
+
+{% endblock %}

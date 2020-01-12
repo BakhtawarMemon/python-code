@@ -1,0 +1,13 @@
+Log timestamp: 1570312155.442225 -- blur_with_pure_python() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 5.305251359939575
+Log timestamp: 1570312155.4947438 -- blur_with_numpy_vectorization() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 0.051222801208496094
+Log timestamp: 1570312156.5836923 -- blur_with_numba_support() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 1.0881659984588623
+Log timestamp: 1570446484.588704 -- blur_with_pure_python() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 4.913405895233154
+Log timestamp: 1570446484.613015 -- blur_with_numpy_vectorization() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 0.023833036422729492
+Log timestamp: 1570446485.458729 -- blur_with_numba_support() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 0.8453843593597412
+Log timestamp: 1570446663.676702 -- blur_with_pure_python() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 4.9164228439331055
+Log timestamp: 1570446663.7034628 -- blur_with_numpy_vectorization() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 0.02628469467163086
+Log timestamp: 1570446664.112415 -- blur_with_numba_support() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 0.40855908393859863
+Log timestamp: 1570462244.474375 -- blur_with_pure_python() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 4.980879783630371
+Log timestamp: 1570462270.715338 -- blur_with_pure_python() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 6.038695812225342
+Log timestamp: 1570462270.741246 -- blur_with_numpy_vectorization() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 0.024487018585205078
+Log timestamp: 1570462271.356939 -- blur_with_numba_support() -- image size (H, W, C): (480, 640, 3) -- time taken (s): 0.6152839660644531

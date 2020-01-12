@@ -1,0 +1,10 @@
+(\b(class)\b(?=.+:)\s\w+) : class_declaration
+(\b(self)\b) : self_keyword
+(\b(def)\b(?=.+:)\s\w+) : function_definition
+(\b(for|in)\b(?=.+\()) : loop_for
+(\b(while)\b(?=.+:)) : loop_while
+(\b(if|elif|else)\b(?=.+:|:)) : if_elif_else
+(#.*(?:$|\n)) : comment
+(print(?=\()) : print
+(("[^"]*("|$))|('[^']*('|$))) : string
+(\b(try|except)\b(?=.+:|:)) : try_except
